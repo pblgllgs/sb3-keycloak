@@ -37,3 +37,9 @@ r
 Balbums/src/main/java/com/pblgllgs/albums/security/WebSecurity.java,7\e\7e0c4fa718dd8137bbe94f3550e481f1a87d6f4c
 >
 albums/pom.xml,6\a\6ad78383179dfca5e68fb9fef9ff333ee6934a39
+Å
+Qeurekaserver/src/main/java/com/pblgllgs/eurekaserver/EurekaserverApplication.java,d\8\d8695b2fb1b283751406a793f5dc485b0d05176c
+o
+?albums/src/main/java/com/pblgllgs/albums/AlbumsApplication.java,d\e\debe74731a95be49c90912d90933b2639a21cb08
+o
+?photos/src/main/java/com/pblgllgs/photos/PhotosApplication.java,1\6\169f59f6e08b252278db7742b1b1d322c05c27b8
