@@ -43,3 +43,5 @@ o
 ?albums/src/main/java/com/pblgllgs/albums/AlbumsApplication.java,d\e\debe74731a95be49c90912d90933b2639a21cb08
 o
 ?photos/src/main/java/com/pblgllgs/photos/PhotosApplication.java,1\6\169f59f6e08b252278db7742b1b1d322c05c27b8
+?
+gateway/pom.xml,4\b\4b316bc60d1cfae51045f6fc8e58a8ae31f03ff3
