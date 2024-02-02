@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/albums/pom.xml" />
         <option value="$PROJECT_DIR$/photos/pom.xml" />
         <option value="$PROJECT_DIR$/eurekaserver/pom.xml" />
+        <option value="$PROJECT_DIR$/photoappwebclient/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
