@@ -6,35 +6,34 @@ package com.pblgllgs.resourceserver.security;
  *
  */
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
-import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationConverter;
-import org.springframework.security.web.SecurityFilterChain;
 
-@Configuration
+@SuppressWarnings("deprecation")
+@EnableGlobalMethodSecurity(securedEnabled = true, prePostEnabled = true)
 @EnableWebSecurity
-@EnableMethodSecurity(securedEnabled = true)
-public class WebSecurity {
+public class WebSecurity extends WebSecurityConfigurerAdapter {
 
-    @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
 
         JwtAuthenticationConverter jwtAuthenticationConverter = new JwtAuthenticationConverter();
         jwtAuthenticationConverter.setJwtGrantedAuthoritiesConverter(new KeycloakRoleConverter());
 
-        return http
-                .authorizeHttpRequests(auth -> auth
-//                        .requestMatchers(HttpMethod.GET,"/users/status/check").hasAuthority("SCOPE_profile")
-                        .requestMatchers(HttpMethod.GET,"/users/status/check").hasRole("developer")
-                        .anyRequest().authenticated()
-                )
-                .oauth2ResourceServer(oauth -> oauth.jwt(
-                        jwt -> jwt.jwtAuthenticationConverter(jwtAuthenticationConverter)
-                ))
-                .build();
+        http
+//                .cors().and()
+                .authorizeRequests()
+                .antMatchers(HttpMethod.GET, "/users/status/check")
+//                .hasAuthority("SCOPE_profile")
+//                .hasRole("developer")
+                .hasAuthority("ROLE_developer")
+                .anyRequest().authenticated()
+                .and()
+                .oauth2ResourceServer().jwt()
+                .jwtAuthenticationConverter(jwtAuthenticationConverter);
     }
 }

@@ -47,11 +47,13 @@ o
 gateway/pom.xml,4\b\4b316bc60d1cfae51045f6fc8e58a8ae31f03ff3
 è
 _photoappwebclient/src/main/java/com/pblgllgs/photoappwebclient/controller/AlbumsController.java,3\7\3782c0bf52e708b23ecc5041166a163274335bb1
-ó
-gphotoappwebclient/src/main/java/com/pblgllgs/photoappwebclient/photoappwebclientresponse/AlbumRest.java,1\7\173dc22575e89b7f0b0334d76d13734774f460ac
 Ü
 Vphotoappwebclient/src/main/java/com/pblgllgs/photoappwebclient/response/AlbumRest.java,f\4\f4fa38c8087acead05b6acc5dcbd08da20c99335
 I
 photoappwebclient/pom.xml,0\c\0c48a1217d16d0907b6077cf649e08d5fba2c73c
 ê
 `photoappwebclient/src/main/java/com/pblgllgs/photoappwebclient/PhotoappwebclientApplication.java,f\0\f02ac935f18feb5bb8281bdcd68b0360a13caddd
+Å
+Qresourceserver/src/main/java/com/pblgllgs/resourceserver/security/CorsConfig.java,4\2\4290310757471e4371ef9e9605723797ad6a4a6f
+F
+sb2-oauth-pkce/pom.xml,d\8\d80e5e2029e70c7d12e9980cc4bd97c4f828d162

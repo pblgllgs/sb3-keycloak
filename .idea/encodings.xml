@@ -7,5 +7,6 @@
     <file url="file://$PROJECT_DIR$/photoappwebclient/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/photos/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resourceserver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sb2-oauth-pkce/src/main/java" charset="UTF-8" />
   </component>
 </project>
