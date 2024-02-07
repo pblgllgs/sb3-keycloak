@@ -11,6 +11,11 @@
         <option value="$PROJECT_DIR$/eurekaserver/pom.xml" />
         <option value="$PROJECT_DIR$/photoappwebclient/pom.xml" />
         <option value="$PROJECT_DIR$/sb2-oauth-pkce/pom.xml" />
+        <option value="$PROJECT_DIR$/RemoteUserStorageProvider/pom.xml" />
+        <option value="$PROJECT_DIR$/LegacyUsersWebService/pom.xml" />
+        <option value="$PROJECT_DIR$/authorization-server/pom.xml" />
+        <option value="$PROJECT_DIR$/OrderResourceServer/pom.xml" />
+        <option value="$PROJECT_DIR$/OrdersWebOAuthClient/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />

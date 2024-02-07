@@ -10,8 +10,13 @@
         <module name="eurekaserver" />
         <module name="photoappwebclient" />
         <module name="albums" />
+        <module name="OrdersWebOAuthClient" />
         <module name="resourceserver" />
         <module name="sb2-oauth-pkce" />
+        <module name="RemoteUserStorageProvider" />
+        <module name="authorization-server" />
+        <module name="legacyusersservice" />
+        <module name="OrderResourceServer" />
         <module name="photos" />
         <module name="gateway" />
       </profile>
@@ -19,9 +24,14 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="OrderResourceServer" options="-parameters" />
+      <module name="OrdersWebOAuthClient" options="-parameters" />
+      <module name="RemoteUserStorageProvider" options="-parameters" />
       <module name="albums" options="-parameters" />
+      <module name="authorization-server" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
       <module name="gateway" options="-parameters" />
+      <module name="legacyusersservice" options="-parameters" />
       <module name="photoappwebclient" options="-parameters" />
       <module name="photos" options="-parameters" />
       <module name="resourceserver" options="-parameters" />
